@@ -1,0 +1,586 @@
+
+/*公共样式*/
+a,a:hover{
+    text-decoration: none;
+}
+
+/*顶部通栏样式*/
+
+/*字体引用*/
+body{
+    font-family:'lk';
+    /*padding-top: 70px;*/
+
+}
+#wjs_header{
+
+}
+
+#wjs_header>.top-bar{
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    line-height: 39px;
+}
+
+#wjs_header>.top-bar .row>div+div{
+    border-left: 1px solid #e0e0e0;
+}
+
+.registerBtn{
+    margin-left: 20px;
+}
+
+
+
+/*生成的button按钮*/
+.btn-register {
+    color: #ffffff;
+    background-color: #E9232C;
+    border-color: #DB3B43;
+}
+
+.btn-register:hover,
+.btn-register:focus,
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    color: #ffffff;
+    background-color: #E9232C;
+    border-color: #DB3B43;
+}
+
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    background-image: none;
+}
+
+.btn-register.disabled,
+.btn-register[disabled],
+fieldset[disabled] .btn-register,
+.btn-register.disabled:hover,
+.btn-register[disabled]:hover,
+fieldset[disabled] .btn-register:hover,
+.btn-register.disabled:focus,
+.btn-register[disabled]:focus,
+fieldset[disabled] .btn-register:focus,
+.btn-register.disabled:active,
+.btn-register[disabled]:active,
+fieldset[disabled] .btn-register:active,
+.btn-register.disabled.active,
+.btn-register[disabled].active,
+fieldset[disabled] .btn-register.active {
+    background-color: #E9232C;
+    border-color: #DB3B43;
+}
+
+.btn-register .badge {
+    color: #E9232C;
+    background-color: #ffffff;
+}
+
+
+/*导入外部的第三方字体文件*/
+@font-face{
+    font-family: 'lk';
+    src: url('../fonts/MiFie-Web-Font.eot')
+format('embedded-opentype');
+    src: url('../fonts/MiFie-Web-Font.svg')
+format('svg');
+    src: url('../fonts/MiFie-Web-Font.ttf')
+format('truetype');
+    src: url('../fonts/MiFie-Web-Font.woff') format('woff');
+}
+
+/*手机字体*/
+.icon-phone::before{
+    content:'\e908';
+    font-size: 13px;
+}
+/*电话字体*/
+.icon-tel::before{
+    content: '\e909';
+    font-size: 13px;
+}
+
+/*二维码效果*/
+#wjs_header>.top-bar .row a img{
+    display: none;
+    position: absolute;
+    margin-top: -13px;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 1001;
+
+}
+
+#wjs_header>.top-bar .row a:hover img{
+    display: block;
+}
+
+
+/******导航条的样式********/
+
+#wjs_header .navbar-lk{
+    /*height: 70px;*/
+    background: #ffffff;
+    margin-bottom: 0;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+#wjs_header .navbar-lk .navbar-collapse{
+    z-index: 10000;
+}
+
+#wjs_header .navbar-lk .navbar-header .navbar-toggle{
+    margin-top: 18px;
+}
+
+#wjs_header .navbar-lk .navbar-header .navbar-brand{
+    padding-top: 10px;
+}
+
+#wjs_header .navbar-default .active a,
+#wjs_header .navbar-default li:hover a{
+    color: #000000;
+    background-color: transparent;
+    border-bottom: 2px solid #E9232C;
+}
+
+#wjs_header .navbar-default li a{
+    height: 70px;
+    line-height: 40px;
+    color: #777777;
+}
+
+/*logo字体*/
+.icon-logo::before{
+    content: '\e920';
+    font-size: 50px;
+    font-style: normal;
+    line-height: 50px;
+    color: #E9232C;
+    vertical-align: middle;
+}
+
+/*名字字体*/
+.icon-name::before{
+    content: "\e93e";
+    font-size: 36px;
+    font-style: normal;
+    line-height: 50px;
+    color: #000;
+    vertical-align: middle;
+}
+
+
+/*********轮播图*********/
+
+#wjs_carousel .carousel-inner .item{
+    background: no-repeat center center;
+    background-size: cover;
+
+
+}
+
+/*@media screen and (min-width: 790px){
+    #wjs_carousel .carousel-inner .item{
+        height: 410px;
+    }
+}*/
+/*
+@media screen and (max-width: 790px){
+
+    #wjs_carousel .carousel-inner .item{
+        !*height: 200px;*!
+        width: 500px;
+    }
+}*/
+
+
+
+/***********提示************/
+.icon-uniE907::before{
+    content: '\e907';
+    font-size: 35px;
+    font-style: normal;
+}
+
+#wjs_tips{
+    padding: 50px 0;
+    border: 1px solid #e0e0e0;
+}
+
+#wjs_tips .row div{
+    margin-bottom: 15px;
+}
+#wjs_tips .row div a{
+    color: #777;
+}
+a,a:hover{
+    text-decoration: none;
+}
+#wjs_tips .row div a:hover,
+#wjs_tips .row div a:focus
+{
+    color: #E9232C;
+    text-decoration: none;
+}
+
+
+
+/**********预约*************/
+#wjs_order{
+    padding: 20px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #e0e0e0
+}
+
+#wjs_order .row p::before{
+    content: "\e906";
+    font-size: 20px;
+    margin-right: 3px;
+}
+.icon-uniE905::before{
+    content: "\e905";
+    font-size: 20px;
+    font-style: normal;
+    margin-right: 3px;
+}
+
+#wjs_order .row div p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+#wjs_order .row p strong{
+    color: #E9232C;
+}
+#wjs_order .row p a{
+    margin-left: 10px;
+    font-size: 16px;
+}
+#wjs_order .row .text-muted{
+    font-size: 16px;
+}
+#wjs_order .row .text-muted:hover,
+#wjs_order .row .text-muted:focus{
+    color: #23527c;
+}
+
+
+
+/***********产品中心***********/
+
+#wjs_product {
+    background-color: #ccc;
+    padding: 50px 0;
+}
+
+#wjs_product .container .row li.active a{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    border-bottom: 3px solid #E9232C;
+}
+
+#wjs_product .container .row li a{
+    background-color: transparent;
+    color: #777;
+    font-size: 16px;
+}
+
+#wjs_product .row li a:hover{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/**************面板****************/
+#wjs_product .tab-content{
+    margin-top: 20px;
+    min-width: 400px;
+
+}
+
+
+
+#wjs_product .panel-product{
+    background: #fff;
+    margin-bottom: 20px;
+}
+#wjs_product .panel-product .panel-heading{
+    width: 120px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px dashed #ccc;
+    position: relative;
+}
+#wjs_product .panel-product .panel-heading strong{
+    font-size: 30px;
+    color: #E9232C;
+}
+#wjs_product .panel-product .panel-heading sub{
+    color: #E9232C;
+}
+#wjs_product .panel-product .panel-heading p{
+    margin-top: 5px;
+    font-size: 14px;
+}
+#wjs_product .panel-product .panel-heading::before,
+#wjs_product .panel-product .panel-heading::after{
+    content: '';
+    width: 16px;
+    height: 16px;border-radius: 50%;
+    background: #CCCCCC;
+}
+#wjs_product .panel-product .panel-heading::before{
+    position: absolute;
+    top: -8px;
+    left: -8px;
+}
+#wjs_product .panel-product .panel-heading::after{
+    position: absolute;
+    bottom: -8px;
+    left: -8px;
+}
+
+
+#wjs_product .panel-product .panel-body{
+    height: 150px;
+    margin-right: 120px;
+}
+#wjs_product .panel-product .panel-body h3{
+    margin: 0 0 10px;
+}
+#wjs_product .panel-product .panel-body dl{
+    margin-bottom: 5px;
+}
+#wjs_product .panel-product .panel-body dl dt{
+    color: #999;
+}
+
+#wjs_product .current1::before{
+    content: "\e915";
+    font-size: 40px;
+    position: absolute;
+    top: -9px;
+    left: 15px;
+}
+
+#wjs_product .current1{
+    background-color: #E9232C;
+    color: #fff;
+}
+
+#wjs_product .current1 .panel-heading strong,
+#wjs_product .current1 .panel-heading sub{
+    color: #fff;
+}
+
+#wjs_product .current2{
+    background-color: #e8e8e8;
+}
+
+#wjs_product .current2::before{
+    content: "\e925";
+    font-size: 100px;
+    color: #e9232c;
+    position: absolute;
+    left: 150px;
+    top: 10px;
+    z-index: 9;
+}
+
+#wjs_product .current3::before{
+    content: "\e926";
+    font-size: 100px;
+    color: #e9232c;
+    position: absolute;
+    left: 150px;
+    top: 10px;
+    z-index: 9;
+}
+
+#wjs_product .current4::before{
+    content: "\e927";
+    font-size: 100px;
+    color: #e9232c;
+    position: absolute;
+    left: 150px;
+    top: 10px;
+    z-index: 9;
+}
+
+
+/**************新闻中心*****************/
+#wjs_news{
+    padding: 60px 0;
+    border-bottom: 1px solid #333;
+
+}
+#wjs_news .news-title{
+    height: 60px;
+    display: flex;
+    /*水平*/
+    justify-content: center;
+    /*垂直*/
+
+    align-items:center;
+    font-size: 20px;
+    border-bottom: 1px dashed #666;
+    margin-bottom: 15px;
+}
+#wjs_news .news-btn{
+    display: flex;
+    justify-content: center;
+}
+#wjs_news .icon-news01::before{
+    content: "\e90e";
+    font-size: 28px;
+    color: #EAEAEA;
+    font-style: normal;
+}
+
+#wjs_news .icon-news02::before{
+    content: "\e910";
+    font-size: 28px;
+    color: #EAEAEA;
+    font-style: normal;
+}
+
+#wjs_news .icon-news03::before{
+    content: "\e911";
+    font-size: 28px;
+    color: #EAEAEA;
+    font-style: normal;
+}
+
+#wjs_news .icon-news04::before{
+    content: "\e90e";
+    font-size: 28px;
+    color: #EAEAEA;
+    font-style: normal;
+}
+
+#wjs_news .row ul{
+    padding-left:0;
+}
+
+#wjs_news .row ul li{
+    float: left;
+    margin-right: 10px;
+}
+
+#wjs_news .row ul .active a{
+    background: #E9232C;
+}
+
+#wjs_news .row ul li a{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    margin-bottom: 15px;
+
+}
+
+#wjs_news .row .tab-content ul li{
+    list-style: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/**************底部******************/
+.icon-uniE930::before{
+    content: "\e946";
+}
+#wjs_footer .row div .icon-uniE930:hover{
+    color: #df3232;
+}
+
+
+.icon-uniE92F::before{
+    content: "\e92f";
+}
+#wjs_footer .row div .icon-uniE92F:hover{
+    color: #e8380d;
+}
+
+
+.icon-uniE92E::before{
+    content: "\e92e";
+}
+#wjs_footer .row div .icon-uniE92E:hover{
+    color: #ed6f00;
+}
+
+
+.icon-uniE92A::before{
+    content: "\e92a";
+}
+#wjs_footer .row div .icon-uniE92A:hover{
+    color: #159f69;
+}
+
+
+.icon-uniE929::before{
+    content: "\e929";
+}
+#wjs_footer .row div .icon-uniE929:hover{
+    color: #07569e;
+}
+
+
+.icon-uniE931::before{
+    content: "\e931";
+}
+#wjs_footer .row div .icon-uniE931:hover{
+    color: #004098;
+}
+
+
+.icon-uniE92C::before{
+    content: "\e92c";
+}
+#wjs_footer .row div .icon-uniE92C:hover{
+    color: #d32019;
+}
+
+
+.icon-uniE92B::before{
+    content: "\e92b";
+}
+#wjs_footer .row div .icon-uniE92B:hover{
+    color: #3eac4a;
+}
+
+
+.icon-uniE92D::before{
+    content: "\e92d";
+}
+#wjs_footer .row div .icon-uniE92D:hover{
+    color: #2bb289;
+}
+
+#wjs_footer{
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+#wjs_footer .row div+div{
+    border-left: 1px dashed #999;
+    margin-right: 15px;
+}
+#wjs_footer .row a{
+    font-size: 60px;
+    color: #999;
+}
+
+
+
